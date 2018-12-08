@@ -16,7 +16,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter h930 h932,$(TARGET_DEVICE)),)
+ifneq ($(filter h930 h931 h932 h933 us998,$(TARGET_DEVICE)),)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := com.quicinc.cne.api@1.0
