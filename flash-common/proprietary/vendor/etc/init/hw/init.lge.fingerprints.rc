@@ -1,9 +1,0 @@
-on boot
-    chown system system /dev/goodix_fp
-    chmod 0644 /dev/goodix_fp
-
-on post-fs-data
-    mkdir /mnt/vendor/persist-lg/goodix 755 system system
-
-on property:ro.vendor.lge.minios.bootstart=1
-    start vendor.lge-biometrics-fingerprint-hal-2-1
